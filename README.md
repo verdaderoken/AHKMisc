@@ -1,12 +1,12 @@
 # AHKMisc
 
-Libraries, tools, and other fun stuff I made for AutoHotkey v2.
+Libraries, tools, and other fun stuff I made with AutoHotkey v2.
 
 ## Why
 
 When I started using AHK, I felt like I was missing some functions that I was used to from other languages like Python and Javascript.
 
-These libraries are heavily inspired by those languages and are meant to make scripting easier and comprehensible.
+These libraries are heavily inspired by those languages and are meant to make scripting easier and more comprehensible.
 
 ## Requirements and Usage
 

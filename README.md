@@ -30,7 +30,7 @@ Some libraries depend on other libraries. Please check the source code for more 
 
 | Library                    | Description                                                      | Has Dependencies |
 | -------------------------- | ---------------------------------------------------------------- | ---------------- |
-| [7Zip](lib/7Zip.ahk)       | A wrapper for 7z archives                                        | Yes              |
+| [7Zip](lib/7zip.ahk)       | A wrapper for 7z archives                                        | Yes              |
 | [Arrays](lib/Arrays.ahk)   | Extended array functions like `ArrayMatch()` and `ArrayFilter()` |                  |
 | [Basic](lib/Basic.ahk)     | More basic functions like `Print()` and `Len()`                  | Yes              |
 | [Dir](lib/Dir.ahk)         | Directory functions                                              |                  |

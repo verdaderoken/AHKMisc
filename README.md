@@ -12,13 +12,17 @@ These libraries are heavily inspired by those languages and are meant to make sc
 
 - You need to have AutoHotkey v2.0 (or later) installed. You can download it from [here](https://www.autohotkey.com/download).
 
-1. Download from releases or clone the repository.
-2. Include the library you want to use.
-3. Refer to the documentation in the source code.
+1. Download from [releases](https://github.com/verdaderoken/AHKMisc/releases) or clone the repository.
 
-```autohotkey
-#Include <LibFileName>
-```
+   ```
+   git clone https://github.com/verdaderoken/AHKMisc.git
+   ```
+3. Include the library you want to use.
+    ```autohotkey
+    #Include <LibFileName>
+    ```
+
+4. Refer to the documentation in the source code.
 
 ## Libraries
 

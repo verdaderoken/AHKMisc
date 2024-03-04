@@ -21,6 +21,15 @@ RunWaitOne(command) {
     return OUT
 }
 
+
+/**
+ * Evaluate an arithmetic expression using the `cmd` command.
+ * @param expression {String} - The arithmetic expression to evaluate.
+ * @returns {Buffer|String} - The result of the arithmetic expression.
+ */
+EvalArithmetic(expression) => RunWaitOne(Format('cmd /c "set /a {1}"', expression))
+
+
 /**
  * Run or activate a window.
  * 

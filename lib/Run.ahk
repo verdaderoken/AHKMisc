@@ -12,7 +12,7 @@
  * @returns {Buffer|String} The output of the command
  */
 RunWaitOne(command) {
-    FN := Random(10000, 100000)
+    FN := A_TickCount
     shell := ComObject("WScript.Shell")
     cmd := Format('{1} /c {2} > {3}\{4}.txt', A_ComSpec, command, A_Temp, FN)
     exec := shell.Run(cmd, 0, true)
@@ -27,8 +27,7 @@ RunWaitOne(command) {
  * @param expression {String} - The arithmetic expression to evaluate.
  * @returns {Buffer|String} - The result of the arithmetic expression.
  */
-EvalArithmetic(expression) => RunWaitOne(Format('cmd /c "set /a {1}"', expression))
-
+EvalArithmetic(expression) => RunWaitOne(Format('set /a {1}', expression))
 
 /**
  * Run or activate a window.
@@ -46,7 +45,7 @@ RunActivate(Target, Proc, AllowMultiInstance := false) {
 
 /**
  * Opens the properties window of the file
- * @param path The path of the file
+ * @param path The path of the filecmd /c 
  */
 RunProperties(path) {
     shell := ComObject("shell.application")

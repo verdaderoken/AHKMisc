@@ -79,7 +79,3 @@ Other repositories worth checking out:
 ---
 
 AHKMisc © 2024 [Ken Verdadero](https://kenverdadero.com). MIT License
-
-```
-
-```

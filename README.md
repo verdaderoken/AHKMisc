@@ -68,10 +68,12 @@ If you find any issues or have any suggestions, please open an issue or a pull r
 ## Resources
 
 - [AutoHotkey v2 Documentation](https://www.autohotkey.com/docs/v2/)
+- [AutoHotkey Wiki](https://autohotkey.wiki/start)
 
 Other repositories worth checking out:
 
 - [awesome-AutoHotkey](https://github.com/ahkscript/awesome-AutoHotkey)
+- [AHK v2 Libraries by Descolada](https://github.com/Descolada/AHK-v2-libraries)
 
 ---
 

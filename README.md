@@ -6,23 +6,25 @@ Libraries, tools, and other fun stuff I made with AutoHotkey v2.
 
 When I started using AHK, I felt like I was missing some functions that I was used to from other languages like Python and Javascript.
 
-These libraries are heavily inspired by those languages and are meant to make scripting easier and more comprehensible.
+These libraries are not the most efficient way to do things in AHK, and there are many [other libraries](#resources) that perform the same tasks but more effectively. I made this to get a grasp of the language and see what I can do with it.
 
 ## Requirements and Usage
 
 - You need to have AutoHotkey v2.0 (or later) installed. You can download it from [here](https://www.autohotkey.com/download).
 
-1. Download from [releases](https://github.com/verdaderoken/AHKMisc/releases) or clone the repository.
+1. Clone the repository or download from [releases](https://github.com/verdaderoken/AHKMisc/releases).
 
    ```
    git clone https://github.com/verdaderoken/AHKMisc.git
    ```
-3. Include the library you want to use.
-    ```autohotkey
-    #Include <LibFileName>
-    ```
 
-4. Refer to the documentation in the source code.
+2. Include the library you want to use.
+
+   ```autohotkey
+   #Include <LibFileName>
+   ```
+
+3. Refer to the documentation in the source code.
 
 ## Libraries
 
@@ -43,7 +45,6 @@ Some libraries depend on other libraries. Please check the source code for more 
 | [Math](lib/Math.ahk)       | Additional math functions                                        |                  |
 | [Path](lib/Path.ahk)       | Path functions                                                   | Yes              |
 | [Run](lib/Run.ahk)         | Run functions                                                    |                  |
-| [Set](lib/Set.ahk)         | Set functions                                                    |                  |
 | [Strings](lib/Strings.ahk) | Extended string functions                                        | Yes              |
 | [Timer](lib/Timer.ahk)     | Class-based AHK Timer                                            |                  |
 | [URI](lib/URI.ahk)         | URI functions                                                    |                  |
@@ -61,9 +62,9 @@ Some tools use the libraries above. Please check the source code for more inform
 | [NumpadBind](tools/NumpadBind.ahk)             | Bind numpad keys to number row for TKL keyboards |
 | [Piano](tools/Piano.ahk)                       | Play piano with your keyboard                    |
 
-## Issues and Contributions
+## Development
 
-If you find any issues or have any suggestions, please open an issue or a pull request.
+I won't be actively maintaining this repository, but I will continue to welcome pull requests and issues. This repository is here for anyone who wants to learn from it or use it as a reference.
 
 ## Resources
 
@@ -77,4 +78,8 @@ Other repositories worth checking out:
 
 ---
 
-AHKMisc © 2024 [Ken Verdadero](https://kenverdadero.com)
+AHKMisc © 2024 [Ken Verdadero](https://kenverdadero.com). MIT License
+
+```
+
+```

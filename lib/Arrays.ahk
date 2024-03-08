@@ -5,12 +5,10 @@
     2022-06-02
 */
 
-/*  Converts string into an array */
-Arr(Str) {
-    return StrSplit(Str)
-}
 
-/*  Displays the array as string (like in Python) */
+/**
+ * Displays the array as string (like in Python) 
+ */
 ArrayAsStr(arr, delims := ", ", end := "", brackets := true, unit := "", unitEnd := true, border := '') {
     if Type(arr) != "Array"
         throw TypeError("Expected an Array type, got " Type(arr), , arr)
@@ -163,19 +161,10 @@ ArrayMerge(arr*) {
 
 
 /**
- * Converts string (set) into array of characters.
- * 
- * If delim is omitted, every character will be an element.
+ * Converts the string into array of characters.
  */
-ArrayFromStr(strSet, delim := '') {
-    if Type(strSet) != "String"
-        throw TypeError("Expected a String type, got " type(strSet))
-    o := []
-    loop parse strSet, delim {
-        o.Push(A_LoopField)
-    }
-    return o
-}
+ArrayFromStr(String, Delimiters?, OmitChars?, MaxParts := -1) => StrSplit(String, Delimiters, OmitChars, MaxParts)
+
 
 /* Subtracts Array A with Array B */
 ArrayDiff(arrA, arrB) {
@@ -247,19 +236,22 @@ ArrayFilter(haystack, needle, matchMode := 'Contains', caseSensitive := false) {
     return FILTERED
 }
 
-/*  Finds the index number of the needle element in haystack.
-    Throws ValueError if not found.
-*/
+/**
+ * Finds the index number of the needle element in haystack.
+ * Throws ValueError if not found.
+ */
 ArrayFind(haystack, needle, caseSensitive := false) {
     if Type(haystack) != "Array" {
         throw TypeError("Parameter #1 is not an Array type. Got " Type(haystack))
     }
-    for i, e in haystack {
-        if caseSensitive {
+    if caseSensitive {
+        for i, e in haystack {
             if e == needle {
                 return i
             }
-        } else {
+        }
+    } else {
+        for i, e in haystack {
             if e = needle {
                 return i
             }
